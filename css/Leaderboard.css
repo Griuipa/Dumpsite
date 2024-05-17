@@ -302,8 +302,8 @@ opacity: 1;
   font-size: 2vw;
 }
 .leadbrd-pfp {
-  width: 5vw;
-  height: 5vw;
+  width: 7vw;
+  width: auto;
 }
 
 .leadbrd-menu-text a {
@@ -311,10 +311,7 @@ opacity: 1;
   text-decoration: none;
 }
 
-.leadbrd-pfp{
-  height: 4vw;
-  overflow: hidden;
-}
+
 .hidden {display:none}
 .selected a {text-decoration: underline;}
 
@@ -322,10 +319,16 @@ opacity: 1;
   .leadbrd-menu-text {
     font-size: 3vw;
   }
+
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .leadbrd-pfp {
-
+    height: 100px;
+    width: auto;
+  }
+  .leadbrd-place{
+    width: 5vw;
+    font-size: 50px;
   }
 }
