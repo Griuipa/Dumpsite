@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="search.js"></script>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <div class="search-opener">
+        <h3><a href="#searchmenu">Search</a></h3>
+    </div>
+    <div class="meal-list-container">
+        <div class="meal-list" id="meal-list">
+
+    </div>
+</div>
+
+    <div class="search-container">
+        <div class="search-popover" id="searchmenu">
+            <div class='content'>
+                <div class="search-results" id="results">
+                    <div class="search-header">
+                        <input type="text" name="searchtxt" id="searchtxt">
+                        <button id="search-button" class="search-button" onclick="getmeal('searchtxt')">Search</button>
+                        <a href="#" class="close" id="close"><span class="close">&times;</span></a>
+                        <p id="search-progress-indicator"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

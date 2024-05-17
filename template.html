@@ -1,0 +1,114 @@
+<!--i know this is awful-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DumpSite Home</title>
+    <link rel="stylesheet" href="css/template.css">
+    
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+    <div id="header">
+        <div class="inner profile">
+            <div class="user-pfp header clickable hoverable child">
+                <img class="header header-usericon" src="Assets/Profile-picture.png">
+            </div>
+            <div class="titlediv child">
+                <h1 class="heading header" style="color: white; align-self: center;">DumpSite</h1>
+            </div>
+            <div class="unchild">
+                <img class="add-bin-button header header-usericon" src="Assets/icons/add-button.png">
+            </div>
+        </div>
+    </div>
+<!--Desktop view(grid)-->
+    <div class="grid-container bin-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+
+    </div>
+
+<!--other out of grid elements-->
+<div class="cornerbutton" id="menu-toggle">
+    <div onclick="menutoggle(this)" class="menu" type="button">
+        <span class="menu absoulute-element">
+            <div class="menu-button-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+   <div class="popover" id="menu">
+    <div class = 'content'>
+      <div class = 'nav'>
+       <table class = 'nav_list'>
+         <tr>
+
+         <div class = 'nav_list_item'>
+         <td><a href="index.html">Home</a></td>
+         </div>
+
+        <div class = 'nav_list_item'>
+          <td><a href="bins.html">Bins</a></td>
+        </div>
+
+        </tr>
+        <tr>
+         <div class = 'nav_list_item'>
+           <td><a href="map.html">Map</a></td>
+         </div>
+       <div class = 'nav_list_item'>
+         <td><a href="Leaderboard.html">Leaderboard</a></td>
+         </div>
+        </tr>
+        <tr>
+
+       <div class = 'nav_list_item'>
+         <td><a href="meal-planner.html">Meal plan</a></td>
+         </div>
+        <div class = 'nav_list_item'>
+           <td><a href="settings.html">Settings</a></td>
+         </div>
+         
+        </tr>
+     </table>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div class="random back stuff">
+    <a href="#menu" id="openmenu"></a>
+    <a href="#" id="closemenu"></a>
+</div>
+
+<!--JAVASCRIPT-->
+<script>
+var menu = false
+function menutoggle(x){
+    x.classList.toggle("change")
+    if (menu) {
+        document.getElementById('closemenu').click()
+        menu = false
+    } else {
+        document.getElementById('openmenu').click()
+        menu = true
+    }
+}
+</script>
+
+</body>
+</html>
