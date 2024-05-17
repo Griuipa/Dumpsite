@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DumpSite - Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="">
+    <header>
+        <nav>
+            <div class="container">
+                <h1>DumpSite</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to DumpSite!</h2>
+            <p>Your Premier Waste Management Solution</p>
+        </div>
+    </section>
+
+
+    <div class="cornerbutton" id="menu-toggle">
+        <div onclick="menutoggle(this)" class="menu" type="button">
+            <span class="menu absoulute-element">
+                <div class="menu-button-container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+       <div class="popover" id="menu">
+        <div class = 'content'>
+          <div class = 'nav'>
+           <table class = 'nav_list'>
+             <tr>
+    
+             <div class = 'nav_list_item'>
+             <td><a href="home.html">Home</a></td>
+             </div>
+    
+            <div class = 'nav_list_item'>
+              <td><a href="bins.html">Manage Bins</a></td>
+            </div>
+    
+            </tr>
+            <tr>
+             <div class = 'nav_list_item'>
+               <td><a href="map.html">Map</a></td>
+             </div>
+           <div class = 'nav_list_item'>
+             <td><a href="Leaderboard.html">Leaderboard</a></td>
+             </div>
+            </tr>
+            <tr>
+    
+           <div class = 'nav_list_item'>
+             <td><a href="meal-planner.html">Meal plan</a></td>
+             </div>
+            <div class = 'nav_list_item'>
+               <td><a href="#">Settings</a></td>
+             </div>
+             
+            </tr>
+         </table>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="random back stuff">
+        <a href="#menu" id="openmenu"></a>
+        <a href="#" id="closemenu"></a>
+    </div>
+    
+    <!--JAVASCRIPT-->
+    <script>
+    var menu = false
+    function menutoggle(x){
+        x.classList.toggle("change")
+        if (menu) {
+            document.getElementById('closemenu').click()
+            menu = false
+        } else {
+            document.getElementById('openmenu').click()
+            menu = true
+        }
+    }
+    function edit(x){
+        let bin = document.getElementById(x);
+        let newname = prompt("Please enter the new name");
+        let element = bin.getElementsByClassName("name-box")[0];
+        element.innerHTML = newname;
+    }
+
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DumpSite. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
