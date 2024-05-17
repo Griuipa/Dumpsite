@@ -35,17 +35,18 @@ body, html {
     transform: translateY(-50%);
 }
 #header {
-    background-color: rgb(70, 70, 70);
+    background-color: rgba(70, 70, 70, 0.642);
     overflow: hidden;
+    backdrop-filter: blur(5px);
     align-self: center;
     width: 100vw;
     height: 8vh;
-    opacity: 90%;
 }
 
   #inner{
     overflow: hidden;
     width: 100vw;
+    opacity: 100%;
 
   }
   .child {
@@ -282,4 +283,11 @@ opacity: 1;
   transform: translateY(0);
   opacity: 1;
 }
+}
+
+iframe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
 }
