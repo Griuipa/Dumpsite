@@ -17,3 +17,5 @@ Intellibins is a concept product/business that sells smart bins and services rel
 ### Map
 
 ### Meal planner
+
+### Sammy was here
