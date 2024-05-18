@@ -1,0 +1,187 @@
+<!--i know this is awful-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DumpSite Home</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div id="header">
+        <div class="inner profile">
+            <div class="user-pfp header clickable hoverable child">
+                <img class="header header-usericon" src="Assets/Profile-picture.png" loading="lazy">
+            </div>
+            <div class="titlediv child">
+                <h1 class="heading header" style="color: white; align-self: center;">DumpSite</h1>
+            </div>
+            <div class="unchild">
+                <img class="add-bin-button header header-usericon" src="Assets/icons/add-button.png">
+            </div>
+        </div>
+</div>
+<!--Desktop view(grid)-->
+<div class="page-content">
+    <div class="grid-container bin-container">
+        <div class="bin-card bin-recycle" id="bin-1">
+            <table style="width: 100%; table-layout: fixed;">
+                <tr>
+                    <th colspan="2" class="name-box">Recycle bin</th>
+                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-1')"></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-med-tex">Weight Fill: 45/60kg</p></td>
+                    <td><p class="bin-med-tex">6 days until collection</p></td>
+                    <td><p class="bin-med-tex">Charging via solar: 86%</p></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
+                    <td></td>
+                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="bin-card bin-waste" id="bin-2">
+            <table style="width: 100%; table-layout: fixed;">
+                <tr>
+                    <th colspan="2"class="name-box">Landfill bin</th>
+                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-2')"></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-med-tex warning">Weight Fill: 70/60kg</p></td>
+                    <td><p class="bin-med-tex">6 days until collection</p></td>
+                    <td><p class="bin-med-tex">Charging via solar: 100%</p></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
+                    <td></td>
+                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="bin-card bin-waste" id="bin-3">
+            <table style="width: 100%; table-layout: fixed;">
+                <tr>
+                    <th colspan="2" class="name-box">Secondary Landfill bin</th>
+                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-3')"></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-med-tex">Weight Fill: 20/60kg</p></td>
+                    <td><p class="bin-med-tex">6 days until collection</p></td>
+                    <td><p class="bin-med-tex">Charging via solar: 100%</p></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
+                    <td></td>
+                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="bin-card bin-green" id="bin-4">
+            <table style="width: 100%; table-layout: fixed;">
+                <tr>
+                    <th colspan="2" class="name-box">Green Bin</th>
+                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-4')"></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-med-tex">Weight Fill: 30/60kg</p></td>
+                    <td><p class="bin-med-tex">13 days until collection</p></td>
+                    <td><p class="bin-med-tex">Charging via solar: 63%</p></td>
+                </tr>
+                <tr>
+                    <td><p class="bin-sml-tex">Next collection: 2 April</p></td>
+                    <td></td>
+                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="spacer" style="height: 20vh;"></div>
+    </div>
+</div>
+<!--other out of grid elements-->
+<div class="cornerbutton" id="menu-toggle">
+    <div onclick="menutoggle(this)" class="menu" type="button">
+        <span class="menu absoulute-element">
+            <div class="menu-button-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+   <div class="popover" id="menu">
+    <div class = 'content'>
+      <div class = 'nav'>
+       <table class = 'nav_list'>
+         <tr>
+
+         <div class = 'nav_list_item'>
+         <td><a href="index.html">Home</a></td>
+         </div>
+
+        <div class = 'nav_list_item'>
+          <td><a href="bins.html">Bins</a></td>
+        </div>
+
+        </tr>
+        <tr>
+         <div class = 'nav_list_item'>
+           <td><a href="map.html">Map</a></td>
+         </div>
+       <div class = 'nav_list_item'>
+         <td><a href="Leaderboard.html">Leaderboard</a></td>
+         </div>
+        </tr>
+        <tr>
+
+       <div class = 'nav_list_item'>
+         <td><a href="meal-planner.html">Meal plan</a></td>
+         </div>
+        <div class = 'nav_list_item'>
+           <td><a href="#">Settings</a></td>
+         </div>
+         
+        </tr>
+     </table>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div class="random back stuff">
+    <a href="#menu" id="openmenu"></a>
+    <a href="#" id="closemenu"></a>
+</div>
+
+<!--JAVASCRIPT-->
+<script>
+var menu = false
+function menutoggle(x){
+    x.classList.toggle("change")
+    if (menu) {
+        document.getElementById('closemenu').click()
+        menu = false
+    } else {
+        document.getElementById('openmenu').click()
+        menu = true
+    }
+}
+function edit(x){
+    let bin = document.getElementById(x);
+    let newname = prompt("Please enter the new name");
+    let element = bin.getElementsByClassName("name-box")[0];
+    element.innerHTML = newname;
+}
+
+</script>
+
+</body>
+</html>

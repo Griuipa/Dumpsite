@@ -226,3 +226,17 @@ opacity: 1;
   opacity: 1;
 }
 }
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.footer-link:hover {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.hero h2,p{
+  color: #ffffff;
+}
