@@ -4,6 +4,14 @@ let meals = []
 let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 // general functions
 
+function getdayindex(input){
+    var currentd = 0
+    for (let i = 0; i < input; i++){
+        currentd += 1
+        if (currentd == 7){currentd = 0}}
+    return currentd
+}
+
 const getJSON = async url => {
     const response = await fetch(url);
     if (!response.ok)
@@ -60,7 +68,7 @@ function resultselected(result){
     let current = document.getElementsByClassName('meal-list-item').length
     let html = create(`
 <div class="meal-list-item" id="${current}">
-    <h2 class="meal-date"><b>${days[current]}</b></h2>
+    <h2 class="meal-date"><b>${days[getdayindex(current)]}</b></h2>
     <img src="${meal.strMealThumb}" alt="meal image" class="meal-list-image">
     <p class="meal-list-text">${(meal.strMeal).replace(" ", "<br>")}</p>
 </div>`)
@@ -68,3 +76,12 @@ function resultselected(result){
     document.querySelectorAll('.search-result').forEach(e => e.remove());
     document.getElementById('close').click()
 }
+
+/*return listener*/
+function listener() {
+var searchbox = document.getElementById('searchtxt')
+searchbox.addEventListener("keydown", function(e){
+    console.log("type")
+    if (e.code === "Enter"){getmeal('searchtxt')}
+})}
+setTimeout(listener, 1000)

@@ -35,12 +35,17 @@ body, html {
     transform: translateY(-50%);
 }
 #header {
-    background-color: rgb(70, 70, 70);
-    overflow: hidden;
-    align-self: center;
-    width: 100vw;
-    height: 8vh;
-    opacity: 90%;
+  background-color: rgba(79, 79, 79, 0.46);
+  overflow: hidden;
+  align-self: center;
+  backdrop-filter: blur(20px);
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+}
+#headerbg {
+width: 100vw;
+height: 8vh;
 }
 
   #inner{
@@ -279,6 +284,21 @@ opacity: 1;
 }
 
 
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
 /*leaderboard*/
 
 .leadbrd-items{
@@ -298,12 +318,16 @@ opacity: 1;
 }
 
 .leadbrd-place{
-  width: 5vw;
-  font-size: 2vw;
+  width: 7vw;
+  font-size: 4vw;
+  padding-right: 40px;
+  animation: shake 0.3s;
+
 }
 .leadbrd-pfp {
-  width: 7vw;
-  width: auto;
+  padding-left: 10px;
+  width: 5vw;
+  animation: shake 0.3s;
 }
 
 .leadbrd-menu-text a {
@@ -311,6 +335,14 @@ opacity: 1;
   text-decoration: none;
 }
 
+.leaderboard-item {
+  transition: all 0.5s;
+}
+
+.leaderboard-item:hover {
+  scale: 120%;
+
+}
 
 .hidden {display:none}
 .selected a {text-decoration: underline;}
@@ -322,13 +354,30 @@ opacity: 1;
 
 }
 
+.leadbrd-name,.leadbrd-score {
+  font-size: 3vw;
+  animation: shake 0.3s;
+}
+
 @media screen and (max-width: 800px) {
   .leadbrd-pfp {
-    height: 100px;
+    height: 80px;
     width: auto;
+    max-width: 100px;
+    padding: 10px;
   }
   .leadbrd-place{
     width: 5vw;
     font-size: 50px;
   }
+  .leadbrd-name,.leadbrd-score {
+    font-size: 30px;
+  }
+  .leaderboard-item:hover {
+    scale: 120%;
+    translate: -10vw 0;
+  }
+}
+.bottom-spacer {
+  height: 15vh;
 }
