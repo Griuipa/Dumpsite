@@ -43,29 +43,6 @@ header .container h1 {
   font-size: 24px;
 }
 
-.text-box {
-  background: radial-gradient(circle, maroon, blue,black);
-  padding: 1.5rem;
-  margin: 1rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin-left: 152px;
-}
-
-.text-box h3 {
-  margin-top: 0;
-  color: #fff;
-}
-
-.text-box p {
-  color: #fff;
-}
-
-.bpm{
-  width: 550px;
-  height: 450px;
-}
-
 /* Footer */
 footer {
   background-color: #424242;
@@ -263,3 +240,12 @@ opacity: 1;
 .hero h2,p{
   color: #ffffff;
 }
+
+.content-section {
+  text-align: center;
+}
+
+.content-section h3 {
+  color: #ffffff;
+}
+

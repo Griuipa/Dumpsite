@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DumpSite Home</title>
+    <title>DumpSite Meals</title>
     <script type="text/javascript" src="/scripts/search.js"></script>
     <link rel="stylesheet" href="/css/meal-planner.css">
     
@@ -28,13 +28,42 @@
     </div>
     <!--content-->
     <div class="page-content">
-        <div class="search-opener">
-            <a href="#searchmenu"><img src="/Assets/icons/add-button.png" alt="New meal" class="search-opener-img"></a>
-            <p>new meal plan</p>
-        </div>
-        <div class="meal-list-container">
-            <div class="meal-list" id="meal-list">
+        <div class="breakfast">
+            <div class="search-opener">
+                <h1>Breakfast</h1>
+                <ul>
+                    <a href="#searchmenu" onclick="setselected('breakfast')"><img src="/Assets/icons/add-button.png" alt="New meal" class="search-opener-img"></a>
+                    <p>new meal plan</p>
+                </ul>
+            </div>
+            <div class="breakfast-meal-list-container">
+                <div class="meal-list" id="breakfast meal-list">
 
+                </div>
+            </div>
+        </div>
+        <div class="lunch">
+            <div class="search-opener">
+                <h1>Lunch</h1>
+                <a href="#searchmenu" onclick="setselected('lunch')"><img src="/Assets/icons/add-button.png" alt="New meal" class="search-opener-img"></a>
+                <p>new meal plan</p>
+            </div>
+            <div class="lunch-meal-list-container">
+                <div class="meal-list" id="lunch meal-list">
+
+                </div>
+            </div>
+        </div>
+        <div class="dinner">
+            <div class="search-opener">
+                <h1>Dinner</h1>
+                <a href="#searchmenu" onclick="setselected('dinner')"><img src="/Assets/icons/add-button.png" alt="New meal" class="search-opener-img"></a>
+                <p>new meal plan</p>
+            </div>
+            <div class="dinner-meal-list-container">
+                <div class="meal-list" id="dinner meal-list">
+
+                </div>
             </div>
         </div>
         <div class="search-container">

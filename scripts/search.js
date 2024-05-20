@@ -1,6 +1,11 @@
 // Gloabl Variables
 let storage = []
 let meals = []
+meals[0] = []
+meals[1] = []
+meals[2] = []
+console.log(meals)
+var selected = ""
 let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 // general functions
 
@@ -10,6 +15,16 @@ function getdayindex(input){
         currentd += 1
         if (currentd == 7){currentd = 0}}
     return currentd
+}
+
+function mealtoindex(name) {
+    if (name == 'breakfast'){
+        return 0
+    }else if (name == 'lunch'){
+        return 1
+    }else if (name == 'dinner') {
+        return 2
+    }
 }
 
 const getJSON = async url => {
@@ -31,6 +46,9 @@ function create(htmlStr) {
 function formattoHTML(text){
     let out = text.replace(/\n/gi, "<br>")
     return out
+}
+function setselected(input) {
+    selected = input
 }
 // search
 function getmeal(element) {
@@ -64,15 +82,15 @@ function resultselected(result){
     console.log(result)
     let meal = storage[0].meals[result]
     console.log(meal)
-    meals[result] = meal
-    let current = document.getElementsByClassName('meal-list-item').length
+    meals[mealtoindex(selected)][result] = meal
+    let current = document.getElementsByClassName(`${selected} meal-list-item`).length
     let html = create(`
-<div class="meal-list-item" id="${current}">
+<div class="${selected} meal-list-item" id="${current}">
     <h2 class="meal-date"><b>${days[getdayindex(current)]}</b></h2>
     <img src="${meal.strMealThumb}" alt="meal image" class="meal-list-image">
     <p class="meal-list-text">${(meal.strMeal).replace(" ", "<br>")}</p>
 </div>`)
-    document.getElementById('meal-list').appendChild(html)
+    document.getElementById(`${selected} meal-list`).appendChild(html)
     document.querySelectorAll('.search-result').forEach(e => e.remove());
     document.getElementById('close').click()
 }
