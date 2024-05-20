@@ -240,12 +240,62 @@ opacity: 1;
 .hero h2,p{
   color: #ffffff;
 }
-
+/*content*/
 .content-section {
   text-align: center;
+  width: 100%;
+  background-color: #ffffff03;
+  backdrop-filter: blur(20px);
 }
 
-.content-section h3 {
+.content-section h3,h1 {
   color: #ffffff;
 }
+#init-spacer {
+  height: 80vh;
+}
 
+#img-1 {
+  background-image: url(/Assets/Recording_5.00_01_05_21.Still001.bmp);
+}
+
+#img-2 {
+  background-image: url(/Assets/Recording_5.00_01_05_21.Still001.bmp);
+}
+.header {
+  background-color: #6e6e6e38;
+  backdrop-filter: blur(10px);
+  margin: 0;
+  width: 100%;
+  height: 9vw;
+  font-size: 3vw;
+}
+
+.imgs {
+  margin: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(20px);
+}
+.overlay h1 {
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 800px) {
+  .overlay h1 {
+    font-size: 30px;
+  }
+  .header {
+    font-size: 30px;
+    height: 90px;
+  }
+}
