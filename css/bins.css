@@ -121,15 +121,14 @@ body, html {
 }
 
 .change .bar1 {
-  transform: translate(0, 1vh) rotate(-45deg);
+  transform: translate(0, 11px) rotate(-45deg);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-  transform: translate(0, -1vh) rotate(45deg);
+  transform: translate(0, -11px) rotate(45deg);
 }
-
 
 .home-btn {
   position: fixed;

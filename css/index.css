@@ -22,6 +22,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 1200px;
@@ -82,13 +83,13 @@ footer {
 }
 
 .change .bar1 {
-  transform: translate(0, 1vh) rotate(-45deg);
+  transform: translate(0, 11px) rotate(-45deg);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-  transform: translate(0, -1vh) rotate(45deg);
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 
@@ -252,15 +253,20 @@ opacity: 1;
   color: #ffffff;
 }
 #init-spacer {
-  height: 80vh;
+  height: 100vh;
 }
 
 #img-1 {
-  background-image: url(/Assets/Recording_5.00_01_05_21.Still001.bmp);
+  background-image: url(/Assets/images/bin3d.bmp);
+}
+#img-2 {
+  background-image: url(/Assets/images/dumpsite-3d2.png);
 }
 
-#img-2 {
-  background-image: url(/Assets/Recording_5.00_01_05_21.Still001.bmp);
+.image-container{
+ border:2px solid blue;
+ width:40%;
+ height:200px;
 }
 .header {
   background-color: #6e6e6e38;
@@ -272,17 +278,17 @@ opacity: 1;
 }
 
 .imgs {
+  overflow: hidden;
   margin: 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
-  width: 100%;
 }
 
 .overlay {
-  height: 100%;
+  height: 30%;
   width: 100%;
   backdrop-filter: blur(20px);
 }
@@ -298,4 +304,28 @@ opacity: 1;
     font-size: 30px;
     height: 90px;
   }
+}
+
+.footer-text {
+  position: relative;
+  bottom: -100px;
+  background-color: #0000002d;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+}
+
+#product-link, .footer-text a{
+  padding: 10px;
+  background-color: #31313174;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+}
+#product-link:hover {
+  background-color: #313131;
+}
+.footer-text a:hover {
+  font-size: 50px;
 }
