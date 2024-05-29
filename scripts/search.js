@@ -103,3 +103,6 @@ searchbox.addEventListener("keydown", function(e){
     if (e.code === "Enter"){getmeal('searchtxt')}
 })}
 setTimeout(listener, 1000)
+
+
+// meal induvidual view
