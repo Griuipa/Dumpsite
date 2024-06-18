@@ -1,0 +1,438 @@
+<!--i know this is awful-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DumpSite Leaderboard</title>
+    <link rel="stylesheet" href="css/leaderboard.css">
+    
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+    <div id="header">
+        <div class="inner profile">
+            <div class="user-pfp header clickable hoverable child">
+                <img class="header header-usericon" src="Assets/Profile-picture.png">
+            </div>
+            <div class="titlediv child">
+                <h1 class="heading header" style="color: white; align-self: center;">DumpSite</h1>
+            </div>
+            <div class="unchild">
+                <img class="add-bin-button header header-usericon" src="Assets/icons/add-button.png">
+            </div>
+        </div>
+    </div>
+    <div id="headerbg"></div>
+<!--Desktop view(grid)-->
+    <div class="grid-container contents-container">
+        <div class="leadbrd-menu-container">
+            <table class="leadbrd-menu-table" style="width: 100%; table-layout: fixed;">
+                <tr>
+                    <th class="leadbrd-menu-text selected" id="city"><a onclick="leadbrdcity()" href="#">City</a></th>
+                    <th class="leadbrd-menu-text" id="suburb"><a onclick="leadbrdsub()" href="#">Suburb</a></th>
+                    <th class="leadbrd-menu-text" id="friends"><a onclick="leadbrdfri()" href="#">Friends</a></th>
+                </tr>
+            </table>
+        </div>
+        <!--City-->
+        <div class="leadbrd-items" id="C">
+            <div class="leaderboard-item" id="C1">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>1</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C1.png" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">S. Claus</td>
+                        <td class="leadbrd-score">Score: 96480</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C2">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>2</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C2.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">Jordin Hendry</td>
+                        <td class="leadbrd-score">Score: 57310</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C3">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>3</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C3.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">The Man</td>
+                        <td class="leadbrd-score">Score: 46780</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C4">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>4</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C4.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Baylor Winston </td>
+                        <td class="leadbrd-score">Score: 34110</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C5">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>5</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C5.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Elizabeth Grace </td>
+                        <td class="leadbrd-score">Score: 22890</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C6">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>6</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C6.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Sammie Adamson </td>
+                        <td class="leadbrd-score">Score: 19480</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C7">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>7</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C7.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Whitney Sampson </td>
+                        <td class="leadbrd-score">Score: 18940</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C8">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>8</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C8.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Brittain L. </td>
+                        <td class="leadbrd-score">Score: 18555</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C9">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>9</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C9.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Santana Sigourney </td>
+                        <td class="leadbrd-score">Score: 18550</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="C10">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>10</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C10.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Santana Sigourney </td>
+                        <td class="leadbrd-score">Score: 18120</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <h1 class="seperator">...</h1>
+            <div class="leaderboard-item" id="C11">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>917</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/C/C11.jpg" alt="C1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">Beck Bailey</td>
+                        <td class="leadbrd-score">Score: 8920</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Suburb-->
+        <div class="leadbrd-items hidden" id="S">
+            <div class="leaderboard-item" id="S1">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>1</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S1.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">The Man</td>
+                        <td class="leadbrd-score">Score: 96480</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S2">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>2</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S8.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">Bronte Wade </td>
+                        <td class="leadbrd-score">Score: 18560</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S3">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>3</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S10.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Beau Hermanson </td>
+                        <td class="leadbrd-score">Score: 18200</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S4">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>4</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S6.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Tracey Ryder </td>
+                        <td class="leadbrd-score">Score: 18120</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S5">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>5</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S2.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Sinclair Fulton </td>
+                        <td class="leadbrd-score">Score: 17920</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S6">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>6</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S9.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Meredith Tanner </td>
+                        <td class="leadbrd-score">Score: 17540</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S7">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>7</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S7.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Cat Scarlett </td>
+                        <td class="leadbrd-score">Score: 16570</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S8">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>8</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S5.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Lennon Garnet </td>
+                        <td class="leadbrd-score">Score: 15950</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S9">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>9</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S3.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Arin Herbertson </td>
+                        <td class="leadbrd-score">Score: 15750</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="S10">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>10</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/S/S4.jpg" alt="S1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Carlisle Lamar </td>
+                        <td class="leadbrd-score">Score: 15489</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Suburb-->
+        <div class="leadbrd-items hidden" id="F">
+            <div class="leaderboard-item" id="F1">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>1</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/F/F1.jpg" alt="F1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">John Smith</td>
+                        <td class="leadbrd-score">Score: 37382</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="F2">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>2</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/F/F2.jpg" alt="F1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name">Bronte Wade </td>
+                        <td class="leadbrd-score">Score: 19444</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="F3">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>3</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/F/F3.jpg" alt="F1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Beau Hermanson </td>
+                        <td class="leadbrd-score">Score: 19330</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="F4">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>4</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/F/F4.jpg" alt="F1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Tracey Ryder </td>
+                        <td class="leadbrd-score">Score: 18101</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="leaderboard-item" id="F5">
+                <table class="leadbrd-item-table">
+                    <tr>
+                        <td class="leadbrd-place"><b>5</b></td>
+                        <td class="leadbrd-pfp"><img src="Assets/Leaderboard/F/F5.jpg" alt="F1" class="leadbrd-pfp"></td>
+                        <td class="leadbrd-name"> Sinclair Fulton </td>
+                        <td class="leadbrd-score">Score: 17920</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-spacer"></div>
+<!--other out of grid elements-->
+<div class="cornerbutton" id="menu-toggle">
+    <div onclick="menutoggle(this)" class="menu" type="button">
+        <span class="menu absoulute-element">
+            <div class="menu-button-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+   <div class="popover" id="menu">
+    <div class = 'content'>
+      <div class = 'nav'>
+       <table class = 'nav_list'>
+         <tr>
+
+         <div class = 'nav_list_item'>
+         <td><a href="index.html">Home</a></td>
+         </div>
+
+        <div class = 'nav_list_item'>
+          <td><a href="bins.html">Bins</a></td>
+        </div>
+
+        </tr>
+        <tr>
+         <div class = 'nav_list_item'>
+           <td><a href="map.html">Map</a></td>
+         </div>
+       <div class = 'nav_list_item'>
+         <td><a href="#">Leaderboard</a></td>
+         </div>
+        </tr>
+        <tr>
+
+       <div class = 'nav_list_item'>
+         <td><a href="meal-planner.html">Meal plan</a></td>
+         </div>
+        <div class = 'nav_list_item'>
+           <td><a href="#">Settings</a></td>
+         </div>
+         
+        </tr>
+     </table>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div class="random back stuff">
+    <a href="#menu" id="openmenu"></a>
+    <a href="#" id="closemenu"></a>
+</div>
+
+<!--JAVASCRIPT-->
+<script>
+var menu = false
+function menutoggle(x){
+    x.classList.toggle("change")
+    if (menu) {
+        document.getElementById('closemenu').click()
+        menu = false
+    } else {
+        document.getElementById('openmenu').click()
+        menu = true
+    }
+}
+
+function leadbrdsub(){
+    document.getElementById("C").classList.add("hidden")
+    document.getElementById("F").classList.add("hidden")
+    document.getElementById("S").classList.remove("hidden")
+
+    document.getElementById("city").classList.remove("selected")
+    document.getElementById("suburb").classList.add("selected")
+    document.getElementById("friends").classList.remove("selected")
+}
+function leadbrdcity(){
+    document.getElementById("C").classList.remove("hidden")
+    document.getElementById("F").classList.add("hidden")
+    document.getElementById("S").classList.add("hidden")
+
+    document.getElementById("city").classList.add("selected")
+    document.getElementById("suburb").classList.remove("selected")
+    document.getElementById("friends").classList.remove("selected")
+}
+function leadbrdfri(){
+    document.getElementById("C").classList.add("hidden")
+    document.getElementById("F").classList.remove("hidden")
+    document.getElementById("S").classList.add("hidden")
+
+    document.getElementById("city").classList.remove("selected")
+    document.getElementById("suburb").classList.remove("selected")
+    document.getElementById("friends").classList.add("selected")
+}
+</script>
+
+</body>
+</html>

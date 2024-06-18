@@ -27,84 +27,144 @@
     </div>
     <div id="headerbg"></div>
 <!--Desktop view(grid)-->
-<div class="page-content">
-    <div class="grid-container bin-container">
-        <div class="bin-card bin-recycle" id="bin-1">
-            <table style="width: 100%; table-layout: fixed;">
-                <tr>
-                    <th colspan="2" class="name-box">Recycle bin</th>
-                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-1')"></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-med-tex">Weight Fill: 45/60kg</p></td>
-                    <td><p class="bin-med-tex">6 days until collection</p></td>
-                    <td><p class="bin-med-tex">Charging via solar: 86%</p></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
-                    <td></td>
-                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
-                </tr>
-            </table>
+    <div class="page-content">
+        <div class="grid-container bin-container">
+            <a class="bin-card bin-recycle" id="bin-1" onclick="openbin(0)">
+                <table style="width: 100%; table-layout: fixed;">
+                    <tr>
+                        <th colspan="2" class="name-box">Recycle bin</th>
+                        <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-1', 0)"></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-med-tex">Weight Fill: 45/60kg</p></td>
+                        <td><p class="bin-med-tex">6 days until collection</p></td>
+                        <td><p class="bin-med-tex">Charging via solar: 86%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
+                        <td></td>
+                        <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                    </tr>
+                </table>
+            </a>
+            <a class="bin-card bin-waste" id="bin-2" onclick="openbin(1)">
+                <table style="width: 100%; table-layout: fixed;">
+                    <tr>
+                        <th colspan="2"class="name-box">Landfill bin</th>
+                        <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-2')"></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-med-tex warning">Weight Fill: 70/60kg</p></td>
+                        <td><p class="bin-med-tex">6 days until collection</p></td>
+                        <td><p class="bin-med-tex">Charging via solar: 100%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
+                        <td></td>
+                        <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                    </tr>
+                </table>
+            </a>
+            <a class="bin-card bin-waste" id="bin-3" onclick="openbin(2)">
+                <table style="width: 100%; table-layout: fixed;">
+                    <tr>
+                        <th colspan="2" class="name-box">Secondary Landfill bin</th>
+                        <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-3', 2)"></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-med-tex">Weight Fill: 20/60kg</p></td>
+                        <td><p class="bin-med-tex">6 days until collection</p></td>
+                        <td><p class="bin-med-tex">Charging via solar: 100%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
+                        <td></td>
+                        <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                    </tr>
+                </table>
+            </a>
+            <a class="bin-card bin-green" id="bin-4" onclick="openbin(3)">
+                <table style="width: 100%; table-layout: fixed;">
+                    <tr>
+                        <th colspan="2" class="name-box">Green Bin</th>
+                        <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-4', 3)"></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-med-tex">Weight Fill: 30/60kg</p></td>
+                        <td><p class="bin-med-tex">13 days until collection</p></td>
+                        <td><p class="bin-med-tex">Discharging: 63%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p class="bin-sml-tex">Next collection: 2 April</p></td>
+                        <td></td>
+                        <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
+                    </tr>
+                </table>
+            </a>
+            <div class="spacer" style="height: 20vh;"></div>
         </div>
-        <div class="bin-card bin-waste" id="bin-2">
-            <table style="width: 100%; table-layout: fixed;">
-                <tr>
-                    <th colspan="2"class="name-box">Landfill bin</th>
-                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-2')"></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-med-tex warning">Weight Fill: 70/60kg</p></td>
-                    <td><p class="bin-med-tex">6 days until collection</p></td>
-                    <td><p class="bin-med-tex">Charging via solar: 100%</p></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
-                    <td></td>
-                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
-                </tr>
-            </table>
-        </div>
-        <div class="bin-card bin-waste" id="bin-3">
-            <table style="width: 100%; table-layout: fixed;">
-                <tr>
-                    <th colspan="2" class="name-box">Secondary Landfill bin</th>
-                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-3')"></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-med-tex">Weight Fill: 20/60kg</p></td>
-                    <td><p class="bin-med-tex">6 days until collection</p></td>
-                    <td><p class="bin-med-tex">Charging via solar: 100%</p></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-sml-tex">Next collection: 26 March</p></td>
-                    <td></td>
-                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
-                </tr>
-            </table>
-        </div>
-        <div class="bin-card bin-green" id="bin-4">
-            <table style="width: 100%; table-layout: fixed;">
-                <tr>
-                    <th colspan="2" class="name-box">Green Bin</th>
-                    <td><img src="Assets/icons/edit-button.png" alt="edit button" class="edit-btn" onclick="edit('bin-4')"></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-med-tex">Weight Fill: 30/60kg</p></td>
-                    <td><p class="bin-med-tex">13 days until collection</p></td>
-                    <td><p class="bin-med-tex">Charging via solar: 63%</p></td>
-                </tr>
-                <tr>
-                    <td><p class="bin-sml-tex">Next collection: 2 April</p></td>
-                    <td></td>
-                    <td><p class="bin-sml-tex" style="display: flex;">click to show more info</p></td>
-                </tr>
-            </table>
-        </div>
-        <div class="spacer" style="height: 20vh;"></div>
     </div>
-</div>
 <!--other out of grid elements-->
+
+<!--Bin popup-->
+
+<div class="bin-container">
+    <div class="bin-popover" id="bin-popup">
+        <div class = 'bin-content-popup'>
+            <table style="width: 100%; table-layout: fixed;">
+                <tr>
+                    <th colspan="2"><h1 id="bin-popup-name">Name</h1></th>
+                </tr>
+                <tr>
+                    <td>Fill Level:</td>
+                    <td id="bin-popup-filllevel">55kg</td>
+                </tr>
+                <tr>
+                    <td>Days till collection:</td>
+                    <td id="bin-popup-days">6 Days</td>
+                </tr>
+                <tr>
+                    <td>Next collection date:</td>
+                    <td id="bin-popup-date">26 March</td>
+                </tr>
+                <tr>
+                    <td>Power:</td>
+                    <td id="bin-popup-charge">86%</td>
+                </tr>
+                <tr>
+                    <td>Charging-method:</td>
+                    <td id="bin-popup-charge-method">Solar</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h2>Points Earned</h2>
+                        <div style="display: grid; grid-template-columns: 50% 50%; column-span: 2;">
+                            <h3>This Week</h3>
+                            <h4 id="week-current">857</h4>
+                            <h3>Last Week</h3>
+                            <h4 id="week-prior">765</h4>
+                            <h3>This Month</h3>
+                            <h4 id="month-current">4523</h4>
+                            <h3>Best month</h3>
+                            <h4 id="month-best">5534</h4>
+                            <h3>All Time</h3>
+                            <h4 id="all-time">32387</h4>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" onclick="edit('bin-1')"><a href="#" style="text-decoration: underline; color: white;">Rename Bin</a></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><a href="#">Exit</a></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+ </div>
+
+
+
 <div class="cornerbutton" id="menu-toggle">
     <div onclick="menutoggle(this)" class="menu" type="button">
         <span class="menu absoulute-element">
@@ -138,7 +198,7 @@
            <td><a href="map.html">Map</a></td>
          </div>
        <div class = 'nav_list_item'>
-         <td><a href="Leaderboard.html">Leaderboard</a></td>
+         <td><a href="leaderboard.html">Leaderboard</a></td>
          </div>
         </tr>
         <tr>
@@ -159,14 +219,17 @@
 
 <div class="random back stuff">
     <a href="#menu" id="openmenu"></a>
+    <a href="#bin-popup" id="openbin"></a>
     <a href="#" id="closemenu"></a>
 </div>
 
 <!--JAVASCRIPT-->
+<script src="scripts/bins.js"></script>
 <script>
 var menu = false
 function menutoggle(x){
     x.classList.toggle("change")
+    document.body.classList.toggle("noscroll")
     if (menu) {
         document.getElementById('closemenu').click()
         menu = false
@@ -175,13 +238,6 @@ function menutoggle(x){
         menu = true
     }
 }
-function edit(x){
-    let bin = document.getElementById(x);
-    let newname = prompt("Please enter the new name");
-    let element = bin.getElementsByClassName("name-box")[0];
-    element.innerHTML = newname;
-}
-
 </script>
 
 </body>
